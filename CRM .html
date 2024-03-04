@@ -59,6 +59,55 @@
       border-radius: 50%;
       margin-right: 10px;
   }  
+  .custom-card img:hover {
+    transform: scale(1.4);
+ }
+
+
+
+ #imagecontainer {
+  text-align: center;
+}
+#textcontainer {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: brown;
+}
+
+
+.row {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.row img:hover {
+  transform: scale(1.1);
+}
 
 
 
@@ -80,7 +129,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Pricing</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -96,14 +145,29 @@
           </li>
         </ul>
         
+        <li class="nav-item">
+          <a class="nav-link far fa-comment-dots" href="./message.html"  style='font-size:48px;color:rgb(18, 16, 16)'></a>
+        </li>
+        
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-success" type="submit">Login</button>
         </form>
       </div>
     </div>
   </nav>
 
+
+  <br><br><br>
+  <div id="textcontainer">
+    <h1 style="color: #101010; font-size: 70px; " class="text-center fw-bolder fst-italic" >Sales teams<br>
+        from good to great</h1>
+    <p style="color: rgb(191, 192, 187); font-size: 30px;">Altos CRM is the true customer-centric tool for your sales needs. Track
+        leads, get accurate<br> forecasts, and focus on what matters: closing opportunities.</p>
+    <br>
+    <a href="" class="button" id="registerLink" style="text-decoration: none;">Start now - it's free</a>
+    <a href="" class="button" id="loginLink" style="text-decoration: none;">Schedule a demo</a>
+    <p>Free, forever, with unlimited users.<a href="" style="text-decoration: none;">See why</a></p>
+</div>
 
 
 
@@ -229,8 +293,87 @@
 </div>
 
 
+<br><br><br>
+  <div id="imagecontainer">
+    <h1 style="color: #101010;" class="text-center fw-bolder fst-italic">Never miss out on a follow-up</h1>
+    <p style="color: rgb(179, 225, 27);">Schedule calls, meetings, mailings, or quotations, and Altos automatically plans the next<br> activity based on your sales script.</p>
+  </div>
+  <br>
+  <center>
+    <img src="https://odoocdn.com/openerp_website/static/src/img/apps/crm/follow-up-example.svg"
+      class="img-fluid" alt="Responsive">
+  </center>
 
-  <h2 class="text-center fw-bolder fst-italic" >Integrates with:</h2>
+  
+
+  <br><br>
+  <h1 class="text-center fw-bolder fst-italic">All the tech in one platform</h1>
+  <br>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <a href="">
+          <img class="img-fluid img-thumbnail" width="250px" height="100px"
+            src="https://odoocdn.com/openerp_website/static/src/img/apps/home/device_shopfloor.webp"
+            class="img-fluid" alt="Responsive image"></a>
+            <p>Shop Floor</p>
+      </div>
+      <div class="col">
+        <a href="">
+          <img class="img-fluid img-thumbnail" width="250px" height="100px"
+            src="https://odoocdn.com/openerp_website/static/src/img/apps/home/device_expenses.webp"
+            class="img-fluid" alt="Responsive image"></a>
+            <p>Expenses</p>
+      </div>
+      <div class="col">
+        <a href="">
+          <img class="img-fluid img-thumbnail" width="250px" height="100px"
+            src="https://odoocdn.com/openerp_website/static/src/img/apps/home/device_pos.webp"
+            class="img-fluid" alt="Responsive image"></a>
+            <p>Point of Sale</p>
+      </div>
+      <div class="col">
+        <a href="">
+          <img class="img-fluid img-thumbnail" width="250px" height="100px"
+            src="https://odoocdn.com/openerp_website/static/src/img/apps/home/device_iot.webp"
+            class="img-fluid" alt="Responsive image"></a>
+            <p>IoT</p>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <a href="">
+          <img class="img-fluid img-thumbnail" width="250px" height="100px"
+            src="https://odoocdn.com/openerp_website/static/src/img/apps/home/device_frontdesk.webp"
+            class="img-fluid" alt="Responsive image"></a>
+            <p>Frontdesk</p>
+      </div>
+      <div class="col">
+        <a href="">
+          <img class="img-fluid img-thumbnail" width="250px" height="100px"
+            src="https://odoocdn.com/openerp_website/static/src/img/apps/home/device_inventory.webp"
+            class="img-fluid" alt="Responsive image"></a>
+            <p>Inventory</p>
+      </div>
+      <div class="col">
+        <a href="">
+          <img class="img-fluid img-thumbnail" width="250px" height="100px"
+            src="https://odoocdn.com/openerp_website/static/src/img/apps/home/device_kiosk.webp"
+            class="img-fluid" alt="Responsive image"></a>
+            <p>Kiosk</p>
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+
+
+
+  <br><br>
+  <h1 class="text-center fw-bolder fst-italic" >Integrates with:</h1>
   <div class="centered-container">
     <div class="shadow-container">
         <div class="custom-card">
@@ -251,12 +394,6 @@
       </div>
     </div>
 </div>
-
-
-
-
-
-
 
 
 
