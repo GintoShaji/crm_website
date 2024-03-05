@@ -111,6 +111,24 @@ a:hover {
 
 
 
+.container3 {
+  width: 100%; 
+  max-width: 1480px; 
+  margin: 0 auto; 
+  padding: 40px;
+  
+  background-color:rebeccapurple ;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  border-radius: 8%;
+}
+.container3 img {
+  max-width: 100%; 
+  display: block; 
+  margin: 0 auto 30px; 
+}
+ img:hover {
+  transform: scale(1.1);
+}
 
 
   </style>
@@ -118,7 +136,7 @@ a:hover {
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-body-">
     <div class="container-fluid">
-      <a class="navbar-brand fw-bolder fst-italic" href="#">Altos CRM Solutions</a>
+      <a class="navbar-brand fw-bolder fst-italic" href="./CRM .html">Altos CRM Solutions</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -126,7 +144,7 @@ a:hover {
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto fw-bolder fst-italic">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="./CRM .html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
@@ -170,74 +188,27 @@ a:hover {
 </div>
 
 
+<br><br>
+<div class="container3">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="fw-bolder fst-italic">All your business on one platform.
+        Simple, efficient, yet affordable!</h2>
+      <br>
+      <p class="fw-bolder fst-italic">Each app simplifies a process and empowers more people.</p>
+      <p class="fw-bolder fst-italic">Imagine the impact when everyone gets the right tool for the job, with perfect integration.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="./static/images/224_generated.jpg" alt="Example Image">
+    </div>
+  </div>
+</div>
 
-  <ul class="cards">
-    <li>
-      <a href="" class="card">
-        <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-        <div class="card__overlay">
-          <div class="card__header">
-            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-            <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-            <div class="card__header-text">
-              <h3 class="card__title">Jessica Parker</h3>            
-              <span class="card__status">1 hour ago</span>
-            </div>
-          </div>
-          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-        </div>
-      </a>      
-    </li>
-    <li>
-      <a href="" class="card">
-        <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
-        <div class="card__overlay">        
-          <div class="card__header">
-            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
-            <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
-            <div class="card__header-text">
-              <h3 class="card__title">kim Cattrall</h3>
-              <span class="card__status">3 hours ago</span>
-            </div>
-          </div>
-          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a href="" class="card">
-        <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-        <div class="card__overlay">
-          <div class="card__header">
-            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-            <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-            <div class="card__header-text">
-              <h3 class="card__title">Jessica Parker</h3>
-              <span class="card__tagline">Lorem ipsum dolor sit amet consectetur</span>            
-              <span class="card__status">1 hour ago</span>
-            </div>
-          </div>
-          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a href="" class="card">
-        <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
-        <div class="card__overlay">
-          <div class="card__header">
-            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
-            <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
-            <div class="card__header-text">
-              <h3 class="card__title">kim Cattrall</h3>
-              <span class="card__status">3 hours ago</span>
-            </div>          
-          </div>
-          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-        </div>
-      </a>
-    </li>    
-  </ul>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<br><br><br>
+  
+
+
 
 
   <h2 class="text-center fw-bolder fst-italic" >All-In-One CRM For Small Business</h2>
@@ -301,7 +272,7 @@ a:hover {
   <br>
   <center>
     <img src="https://odoocdn.com/openerp_website/static/src/img/apps/crm/follow-up-example.svg"
-      class="img-fluid" alt="Responsive">
+      class="img-fluid" alt="Responsive" style="width: 80%;">
   </center>
 
   
