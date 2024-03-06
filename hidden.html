@@ -40,8 +40,10 @@
         margin: 5px 0; 
         font-size: 1rem; 
     }
+    
 </style>
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-body-">
         <div class="container-fluid">
           <a class="navbar-brand fw-bolder fst-italic" href="./CRM .html">Altos CRM Solutions</a>
@@ -85,30 +87,29 @@
 
 
 
-
-    <div class="container bg-white py-5 rounded-3">
-
+    <div class="container bg-white py-4 rounded-3">
         <div class="row">
-            <div style="max-height: 650px; overflow-y:auto" class="col-12">
+            <div style="max-height: 750px; overflow-y:auto" class="col-12">
                 <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
                     class="card-container message justify-content" id="card-container1">
                     <div class="container">
-                        <h3 class="text-center fw-bolder fst-italic">Messages</h3>
+                        <h3 class="text-center fw-bolder fst-italic">Archived Messages</h3>
                     </div>
                     <br><br>
-                
-                        <div class="card message-card" id="card1" draggable="true"">
+
+
+                    <div class="card message-card" id="card1" draggable="true"">
                         <h4 class="fst-italic body mx-2">Message 1</h4>
                         <br>
                         <div class="card-content">
                             <h5 class="fst-italic">Welcome to our CRM website!</h5>
                             <p class="fst-italic">We're excited to have you onboard.</p>
                             <br>
-                            <a class="btn btn-outline-dark fst-italic fw-medium hide-btn" data-card-id="card1"
-                                href="">ARCHIVE</a>
+                            <a class="btn btn-outline-dark fst-italic fw-medium unhide-btn" data-card-id="card1"
+                                href="">UNARCHIVE</a>
                         </div>
                     </div>
-
+                    
 
                     <div class="card message-card" id="card2" draggable="true">
                         <h4 class="fst-italic body mx-2">Message 2</h4>
@@ -117,8 +118,8 @@
                             <h5 class="fst-italic">New feature alert!</h5>
                             <p class="fst-italic">Check out our latest feature and let us know what you think.</p>
                             <br>
-                            <a class="btn btn-outline-dark fst-italic fw-medium hide-btn" data-card-id="card2"
-                                href="">ARCHIVE</a>
+                            <a class="btn btn-outline-dark fst-italic fw-medium unhide-btn" data-card-id="card2"
+                            href="">UNARCHIVE</a>
                         </div>
                     </div>
 
@@ -129,8 +130,8 @@
                             <h5 class="fst-italic">Important Announcement</h5>
                             <p class="fst-italic">Please note that our office will be closed on Monday for maintenance.</p>
                             <br>
-                            <a class="btn btn-outline-dark fst-italic fw-medium hide-btn" data-card-id="card3"
-                                href="">ARCHIVE</a>
+                            <a class="btn btn-outline-dark fst-italic fw-medium unhide-btn" data-card-id="card3"
+                            href="">UNARCHIVE</a>
                         </div>
                     </div>
 
@@ -141,8 +142,8 @@
                             <h5 class="fst-italic">Customer Feedback Request</h5>
                             <p class="fst-italic">We value your opinion! Please take a moment to fill out our customer feedback survey.</p>
                             <br>
-                            <a class="btn btn-outline-dark fst-italic fw-medium hide-btn" data-card-id="card4"
-                                href="">ARCHIVE</a>
+                            <a class="btn btn-outline-dark fst-italic fw-medium unhide-btn" data-card-id="card4"
+                                href="">UNARCHIVE</a>
                         </div>
                     </div>
 
@@ -150,15 +151,15 @@
                         <h4 class="fst-italic body mx-2">Message 5</h4>
                         <br>
                         <div class="card-content">
-                            <h5 class="fst-italic">Holiday Sale!</h5>
+                            <h5 class="fst-italic">Holiday Sale!<h5>
                             <p class="fst-italic">Don't miss our special holiday sale. Limited time offer!</p>
                             <br>
-                            <a class="btn btn-outline-dark fst-italic fw-medium hide-btn" data-card-id="card5"
-                                href="">ARCHIVE</a>
+                            <a class="btn btn-outline-dark fst-italic fw-medium unhide-btn" data-card-id="card5"
+                                href="">UNARCHIVE</a>
                         </div>
                     </div>
-
-
+                    
+                </div>
                 </div>
             </div>
         </div>
@@ -166,80 +167,38 @@
 
     <br>
     <center>
-        <a class="btn btn-success fst-italic fw-medium" href="./hidden.html">view Archived Messages</a>
+        <a class="btn btn-secondary fst-italic fw-medium" href="./message.html">BACK</a>
     </center>
-    <br>
-
-    <div id="archive-popup"
-        style="display: none; position: fixed; top: 65%; left: 75%; transform: translate(-50%, -50%); background-color: rgb(218, 211, 211); padding: 20px; border: 1px solid rgb(0, 0, 0); border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
-        <p class="text-warning px-5">Drop to Archive</p>
-    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            function showArchivePopup() {
-                var popup = document.getElementById('archive-popup');
-                popup.style.display = 'block';
-                setTimeout(function () {
-                    popup.style.display = 'none';
-                }, 2000); 
-            }
-
-            function hideCard(cardId) {
-                var card = document.getElementById(cardId);
-                card.style.display = 'none';
-                sessionStorage.setItem(cardId, 'hidden');
-            }
-
             function unhideCard(cardId) {
                 var card = document.getElementById(cardId);
                 card.style.display = 'block';
-                sessionStorage.removeItem(cardId);
+                sessionStorage.removeItem(cardId); 
             }
-
-            for (var i = 0; i < sessionStorage.length; i++) {
-                var cardId = sessionStorage.key(i);
-                hideCard(cardId);
-            }
-
-            var hideButtons = document.querySelectorAll('.hide-btn');
-            hideButtons.forEach(function (button) {
-                button.addEventListener('click', function () {
-                    var cardId = button.getAttribute('data-card-id');
-                    hideCard(cardId);
-                });
-            });
-
+    
             var unhideButtons = document.querySelectorAll('.unhide-btn');
             unhideButtons.forEach(function (button) {
                 button.addEventListener('click', function () {
                     var cardId = button.getAttribute('data-card-id');
                     unhideCard(cardId);
+                    button.parentElement.style.display = 'none'; 
                 });
             });
-
+    
             var cards = document.querySelectorAll('.card');
             cards.forEach(function (card) {
-                var startX = 0;
-
-                card.addEventListener('dragstart', function (e) {
-                    startX = e.clientX;
-                    showArchivePopup();
-                });
-
-                card.addEventListener('dragend', function (e) {
-                    var deltaX = Math.abs(e.clientX - startX);
-                    if (deltaX >= 20) {
-                        var cardId = card.id;
-                        hideCard(cardId);
-                        window.location.href = "hidden.html";
-                    }
-                });
+                var cardId = card.getAttribute('id');
+                if (sessionStorage.getItem(cardId) !== 'hidden') {
+                    card.style.display = 'none';
+                }
             });
-
         });
     </script>
 
+
+    <br><br><br><br><br><br><br><br><br>
 
     <footer  class="footer" style="background-color: #333; color: #fff; padding: 20px 0; margin-top: 5%; margin-left: 0%; margin-right: 0%;">
         <div class="container">
@@ -274,6 +233,7 @@
             </div>
         </div>
     </footer>
+
 
 
 </body>
