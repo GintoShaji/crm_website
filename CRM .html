@@ -17,12 +17,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     
-    
-
+   
 
   <title>Document</title>
   <style>
+    body {
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzHHl2qgAsswJB-E2MnNtBkXFUHQIAh8t_-g&usqp=CAU");
+      background-repeat: no-repeat; 
+      background-size: cover; 
+      overflow-x: hidden;
+
+  }
     .centered-container {
       display: flex;
       justify-content: center;
@@ -78,15 +86,13 @@
   padding: 10px 20px;
   text-decoration: none;
   color: #fff;
-  background-color: #3498db;
+  background-color: #04AA6D;
   border-radius: 5px;
   font-size: 18px;
   transition: background-color 0.3s;
 }
 
-.button:hover {
-  background-color: #2980b9;
-}
+
 
 a {
   text-decoration: none;
@@ -129,6 +135,10 @@ a:hover {
  img:hover {
   transform: scale(1.1);
 }
+
+
+
+
 
 
   </style>
@@ -175,27 +185,29 @@ a:hover {
 
 
   <br><br><br>
-  <div id="textcontainer">
+  <div id="textcontainer" data-aos="flip-left"
+  data-aos-easing="ease-out-cubic"
+  data-aos-duration="2000">
     <h1 style="color: #101010; font-size: 70px; " class="text-center fw-bolder fst-italic" >Sales teams<br>
         from good to great</h1>
-    <p style="color: rgb(191, 192, 187); font-size: 30px;">Altos CRM is the true customer-centric tool for your sales needs. Track
+    <p style="color: rgb(47, 48, 43); font-size: 30px;">Altos CRM is the true customer-centric tool for your sales needs. Track
         leads, get accurate<br> forecasts, and focus on what matters: closing opportunities.</p>
     <br>
     <a href="" class="button" id="registerLink" style="text-decoration: none;">Start now - it's free</a>
     <a href="" class="button" id="loginLink" style="text-decoration: none;">Schedule a demo</a>
-    <p>Free, forever, with unlimited users.<a href="" style="text-decoration: none;">See why</a></p>
+    <p>Free, forever, with unlimited users.<a href="" style="text-decoration: none; color: #04AA6D;">See why</a></p>
 </div>
 
 
 <br><br>
 <div class="container3">
-  <div class="row">
+  <div class="row" data-aos="zoom-in">
     <div class="col-md-6">
-      <h2 class="fw-bolder fst-italic">All your business on one platform.
+      <h2 class="fw-bolder fst-italic" style="color: rgb(224, 226, 218);">All your business on one platform.
         Simple, efficient, yet affordable!</h2>
       <br>
-      <p class="fw-bolder fst-italic">Each app simplifies a process and empowers more people.</p>
-      <p class="fw-bolder fst-italic">Imagine the impact when everyone gets the right tool for the job, with perfect integration.</p>
+      <p class="fw-bolder fst-italic" style="color: rgb(224, 226, 218);">Each app simplifies a process and empowers more people.</p>
+      <p class="fw-bolder fst-italic" style="color: rgb(224, 226, 218);">Imagine the impact when everyone gets the right tool for the job, with perfect integration.</p>
     </div>
     <div class="col-md-6">
       <img src="./static/images/224_generated.jpg" alt="Example Image">
@@ -212,13 +224,13 @@ a:hover {
 
   <h2 class="text-center fw-bolder fst-italic" >All-In-One CRM For Small Business</h2>
   <p class="text-center fw-bolder fst-italic" >All you need is ALTOSCRM to run your business. Stop using multiple tools for different purposes.</p>
-  <div class="custom1">
-    <div class="custom1-card">
+  <div class="custom1" >
+    <div class="custom1-card" data-aos="fade-right">
       <center>
       <img src="https://znicrm.com/includes/images/features-of-crm/01-Contact-Management-01.png" alt="Image 3" class="custom1-card-img">
      </center>
      <br>
-        <div class="custom1-card-content">
+        <div class="custom1-card-content" >
             <h3>Lead Management</h3>
             <p>Manage your contacts like a boss, every communication, every minute detail at your disposal in seconds.
               .</p>
@@ -226,19 +238,19 @@ a:hover {
         </div>
     </div>
 
-    <div class="custom1-card">
+    <div class="custom1-card" data-aos="fade-right">
       <center>
       <img src="https://znicrm.com/includes/images/features-of-crm/03-Invoicing-01.png" alt="Image 3" class="custom1-card-img">
     </center>
     <br>
-        <div class="custom1-card-content">
+        <div class="custom1-card-content" >
             <h3>Quotes & Invoice</h3>
             <p>Send invoices to your customers in a jiffy. All the details are automatically fetched from CRM.</p>
             <a href="#" class="learn-more-link">Learn More</a>
         </div>
     </div>
-
-    <div class="custom1-card">
+ 
+    <div class="custom1-card" data-aos="fade-left">
     <center>
       <img src="https://znicrm.com/includes/images/features-of-crm/04-Helpdesk-and-Ticketing-01.png" alt="Image 3" class="custom1-card-img">
     </center>
@@ -249,7 +261,7 @@ a:hover {
             <a href="#" class="learn-more-link">Learn More</a>
         </div>
     </div>
-    <div class="custom1-card">
+    <div class="custom1-card" data-aos="fade-left">
       <center>
       <img src="https://znicrm.com/includes/images/features-of-crm/05-Marketing-Automation-01.png" alt="Image 3" class="custom1-card-img">
     </center>
@@ -264,48 +276,53 @@ a:hover {
 
 
 <br><br><br>
-  <div id="imagecontainer">
+  <div id="imagecontainer" data-aos="flip-left">
     <h1 style="color: #101010;" class="text-center fw-bolder fst-italic">Never miss out on a follow-up</h1>
-    <p style="color: rgb(179, 225, 27);">Schedule calls, meetings, mailings, or quotations, and Altos automatically plans the next<br> activity based on your sales script.</p>
+    <p style="color:  #078356;" class="fw-bolder fst-italic">Schedule calls, meetings, mailings, or quotations, and Altos automatically plans the next<br> activity based on your sales script.</p>
+    <br>
   </div>
   <br>
+  <div data-aos="zoom-in-left">
   <center>
     <img src="https://odoocdn.com/openerp_website/static/src/img/apps/crm/follow-up-example.svg"
       class="img-fluid" alt="Responsive" style="width: 80%;">
   </center>
+</div>
 
   
 
-  <br><br>
+  <br><br><br><br>
   <h1 class="text-center fw-bolder fst-italic">All the tech in one platform</h1>
-  <br>
+  <br><br>
 
-  <div class="container text-center">
+  <div class="container text-center" data-aos="fade-down"
+  data-aos-easing="linear"
+  data-aos-duration="1500">
     <div class="row">
       <div class="col">
         <a href="">
-          <img class="img-fluid img-thumbnail" width="250px" height="100px"
+          <img class="img-fluid " width="250px" height="100px"
             src="https://odoocdn.com/openerp_website/static/src/img/apps/home/device_shopfloor.webp"
             class="img-fluid" alt="Responsive image"></a>
             <p>Shop Floor</p>
       </div>
       <div class="col">
         <a href="">
-          <img class="img-fluid img-thumbnail" width="250px" height="100px"
+          <img class="img-fluid " width="250px" height="100px"
             src="https://odoocdn.com/openerp_website/static/src/img/apps/home/device_expenses.webp"
             class="img-fluid" alt="Responsive image"></a>
             <p>Expenses</p>
       </div>
       <div class="col">
         <a href="">
-          <img class="img-fluid img-thumbnail" width="250px" height="100px"
+          <img class="img-fluid " width="250px" height="100px"
             src="https://odoocdn.com/openerp_website/static/src/img/apps/home/device_pos.webp"
             class="img-fluid" alt="Responsive image"></a>
             <p>Point of Sale</p>
       </div>
       <div class="col">
         <a href="">
-          <img class="img-fluid img-thumbnail" width="250px" height="100px"
+          <img class="img-fluid" width="250px" height="100px"
             src="https://odoocdn.com/openerp_website/static/src/img/apps/home/device_iot.webp"
             class="img-fluid" alt="Responsive image"></a>
             <p>IoT</p>
@@ -315,21 +332,21 @@ a:hover {
     <div class="row">
       <div class="col">
         <a href="">
-          <img class="img-fluid img-thumbnail" width="250px" height="100px"
+          <img class="img-fluid " width="250px" height="100px"
             src="https://odoocdn.com/openerp_website/static/src/img/apps/home/device_frontdesk.webp"
             class="img-fluid" alt="Responsive image"></a>
             <p>Frontdesk</p>
       </div>
       <div class="col">
         <a href="">
-          <img class="img-fluid img-thumbnail" width="250px" height="100px"
+          <img class="img-fluid " width="250px" height="100px"
             src="https://odoocdn.com/openerp_website/static/src/img/apps/home/device_inventory.webp"
             class="img-fluid" alt="Responsive image"></a>
             <p>Inventory</p>
       </div>
       <div class="col">
         <a href="">
-          <img class="img-fluid img-thumbnail" width="250px" height="100px"
+          <img class="img-fluid " width="250px" height="100px"
             src="https://odoocdn.com/openerp_website/static/src/img/apps/home/device_kiosk.webp"
             class="img-fluid" alt="Responsive image"></a>
             <p>Kiosk</p>
@@ -344,21 +361,21 @@ a:hover {
 
   <br><br>
   <h1 class="text-center fw-bolder fst-italic" >Integrates with:</h1>
-  <div class="centered-container">
-    <div class="shadow-container">
-        <div class="custom-card">
+  <div class="centered-container" >
+    <div class="shadow-container" >
+        <div class="custom-card" data-aos="fade-up">
             <img src="https://odoocdn.com/openerp_website/static/src/img/icons/mail.svg" alt="Card Image 1">
             <p>Email</p>
         </div>
-        <div class="custom-card">
+        <div class="custom-card" data-aos="fade-up">
             <img src="https://odoocdn.com/openerp_website/static/src/img/icons/message-2.svg" alt="Card Image 2">
             <p>Live chat</p>
         </div>
-        <div class="custom-card">
+        <div class="custom-card" data-aos="fade-up">
             <img src="https://odoocdn.com/openerp_website/static/src/img/icons/vibrate.svg" alt="Card Image 3">
             <p>SMS</p>
         </div>
-        <div class="custom-card">
+        <div class="custom-card" data-aos="fade-up">
           <img src="https://odoocdn.com/openerp_website/static/src/img/icons/call.svg" alt="Card Image 3">
           <p>VoIP</p>
       </div>
@@ -366,6 +383,9 @@ a:hover {
 </div>
 
 
+<script>
+  AOS.init();
+</script>
 
 
   <footer  class="footer" style="background-color: #333; color: #fff; padding: 20px 0; margin-top: 5%; margin-left: 0%; margin-right: 0%;">

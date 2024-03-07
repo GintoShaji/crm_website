@@ -12,15 +12,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <title>Document</title>
 </head>
 <style>
+    body {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzHHl2qgAsswJB-E2MnNtBkXFUHQIAh8t_-g&usqp=CAU");
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        overflow-x: hidden;
+    
+    }
+
     .message {
         display: flex;
         flex-wrap: wrap;
     }
     .message-card {
-        background-color: #f0f0f0;
+        background-color: teal;
+        color: #fff;
         border: 1px solid #ccc;
         border-radius: 5px;
         padding: 10px;
@@ -86,26 +98,26 @@
 
 
 
-
-    <div class="container bg-white py-4 rounded-3">
+    <br>
+    <div class="container bg- py-7 rounded-4">
         <div class="row">
             <div style="max-height: 750px; overflow-y:auto" class="col-12">
                 <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                    class="card-container message justify-content" id="card-container1">
+                    class="card-container message justify-content-center" id="card-container1">
                     <div class="container">
                         <h3 class="text-center fw-bolder fst-italic">Archived Messages</h3>
                     </div>
-                    <br><br>
+                    <br><br><br>
 
 
-                    <div class="card message-card" id="card1" draggable="true"">
+                    <div class="card message-card" id="card1" draggable="true" data-aos="fade-down-right">
                         <h4 class="fst-italic body mx-2">Message 1</h4>
                         <br>
                         <div class="card-content">
                             <h5 class="fst-italic">Welcome to our CRM website!</h5>
                             <p class="fst-italic">We're excited to have you onboard.</p>
                             <br>
-                            <a class="btn btn-outline-dark fst-italic fw-medium unhide-btn" data-card-id="card1"
+                            <a class="btn btn-dark fst-italic fw-medium unhide-btn" data-card-id="card1"
                                 href="">UNARCHIVE</a>
                         </div>
                     </div>
@@ -118,7 +130,7 @@
                             <h5 class="fst-italic">New feature alert!</h5>
                             <p class="fst-italic">Check out our latest feature and let us know what you think.</p>
                             <br>
-                            <a class="btn btn-outline-dark fst-italic fw-medium unhide-btn" data-card-id="card2"
+                            <a class="btn btn-dark fst-italic fw-medium unhide-btn" data-card-id="card2"
                             href="">UNARCHIVE</a>
                         </div>
                     </div>
@@ -129,8 +141,8 @@
                         <div class="card-content">
                             <h5 class="fst-italic">Important Announcement</h5>
                             <p class="fst-italic">Please note that our office will be closed on Monday for maintenance.</p>
-                            <br>
-                            <a class="btn btn-outline-dark fst-italic fw-medium unhide-btn" data-card-id="card3"
+                            <br><br>
+                            <a class="btn btn-dark fst-italic fw-medium unhide-btn" data-card-id="card3"
                             href="">UNARCHIVE</a>
                         </div>
                     </div>
@@ -142,12 +154,12 @@
                             <h5 class="fst-italic">Customer Feedback Request</h5>
                             <p class="fst-italic">We value your opinion! Please take a moment to fill out our customer feedback survey.</p>
                             <br>
-                            <a class="btn btn-outline-dark fst-italic fw-medium unhide-btn" data-card-id="card4"
+                            <a class="btn btn-dark fst-italic fw-medium unhide-btn" data-card-id="card4"
                                 href="">UNARCHIVE</a>
                         </div>
                     </div>
 
-                    <div class="card message-card" id="card5" draggable="true"">
+                    <!-- <div class="card message-card" id="card5" draggable="true"">
                         <h4 class="fst-italic body mx-2">Message 5</h4>
                         <br>
                         <div class="card-content">
@@ -157,7 +169,7 @@
                             <a class="btn btn-outline-dark fst-italic fw-medium unhide-btn" data-card-id="card5"
                                 href="">UNARCHIVE</a>
                         </div>
-                    </div>
+                    </div> -->
                     
                 </div>
                 </div>
@@ -196,6 +208,11 @@
             });
         });
     </script>
+
+
+    <script>
+        AOS.init();
+      </script>
 
 
     <br><br><br><br><br><br><br><br><br>
